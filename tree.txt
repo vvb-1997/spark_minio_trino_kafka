@@ -1,0 +1,70 @@
+.
+├── docker-compose.yaml
+├── download_files.sh
+├── images
+│   ├── hive-metastore
+│   │   ├── conf
+│   │   │   ├── entrypoint.sh
+│   │   │   └── metastore-site.xml
+│   │   └── Dockerfile
+│   ├── spark
+│   │   └── Dockerfile
+│   ├── trino
+│   │   ├── conf
+│   │   │   ├── delta.properties
+│   │   │   ├── hive.properties
+│   │   │   ├── iceberg.properties
+│   │   │   └── metastore-site.xml
+│   │   └── Dockerfile
+│   └── workspace
+│       ├── conf
+│       │   ├── hms-3.0.0-deps.txt
+│       │   ├── ipython_config.py
+│       │   ├── jupyter_notebook_config.py
+│       │   ├── plugin.jupyterlab-settings
+│       │   └── spark-defaults.conf
+│       ├── Dockerfile
+│       └── kernels
+│           ├── delta
+│           │   ├── conf
+│           │   │   ├── 00_startup_pyspark_delta_kernel.py
+│           │   │   ├── ipython_config.py
+│           │   │   └── ipython_kernel_config.py
+│           │   └── media
+│           │       ├── logo-32x32.png
+│           │       ├── logo-64x64.png
+│           │       └── logo-svg.svg
+│           ├── hive
+│           │   ├── conf
+│           │   │   ├── 00_startup_pyspark_hive_kernel.py
+│           │   │   ├── hive-session.ipynb
+│           │   │   ├── ipython_config.py
+│           │   │   └── ipython_kernel_config.py
+│           │   └── media
+│           │       ├── logo-32x32.png
+│           │       ├── logo-64x64.png
+│           │       ├── logo-svg.svg
+│           │       └── pyspark-logo.png
+│           └── iceberg
+│               ├── conf
+│               │   ├── 00_startup_pyspark_iceberg_kernel.py
+│               │   ├── ipython_config.py
+│               │   └── ipython_kernel_config.py
+│               └── media
+│                   ├── logo-32x32.png
+│                   ├── logo-64x64.png
+│                   └── logo-svg.svg
+├── jars
+│   ├── aws-java-sdk-bundle-1.12.262.jar
+│   ├── hadoop-3.3.4.tar.gz
+│   ├── hadoop-aws-3.3.4.jar
+│   ├── hive-standalone-metastore-3.0.0-bin.tar.gz
+│   ├── iceberg-spark-runtime-3.5_2.13-1.9.2.jar
+│   ├── postgresql-42.5.0.jar
+│   └── spark-3.5.6-bin-hadoop3.tgz
+├── kafka
+│   └── docker-compose.yml
+├── README.md
+└── tree.txt
+
+21 directories, 47 files
